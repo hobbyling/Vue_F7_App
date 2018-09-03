@@ -31,11 +31,17 @@
   },
   "homepage": "http://framework7.io/vue/",
   "dependencies": {
+    "axios": "^0.18.0",
     "framework7": "^2.2.5",
     "framework7-icons": "^0.8.9",
     "framework7-vue": "^2.2.5",
     "material-design-icons": "^3.0.1",
-    "vue": "^2.5.2"
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.0.3",
+    "swiper": "^4.3.3",
+    "vue": "^2.5.2",
+    "vue-axios": "^2.1.2",
+    "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

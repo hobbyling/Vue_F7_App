@@ -1,36 +1,71 @@
-import HomePage from './pages/home.vue';
-import AboutPage from './pages/about.vue';
-import FormPage from './pages/form.vue';
-import DynamicRoutePage from './pages/dynamic-route.vue';
+// 官方元件
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+
+// 自訂的分頁元件
+import MainPage from './pages/main/main.vue';
+
 import NotFoundPage from './pages/not-found.vue';
 
-import PanelLeftPage from './pages/panel-left.vue';
-import PanelRightPage from './pages/panel-right.vue';
+import VendorPage from './pages/vendor.vue';
+import GameDetailPage from './pages/game-detail.vue';
+
+import ThemePage from './pages/theme.vue';
+import ColorPage from './pages/color.vue';
+
+import GoldenfPage from './pages/goldenf.vue';
+import PartnerPage from './pages/partner.vue';
+import WebPage from './pages/web.vue';
+import PrivacyPage from './pages/privacy.vue';
+
+Vue.use(VueRouter);
+
 
 export default [
   {
+    tabId: '首頁',
     path: '/',
-    component: HomePage,
+    component: MainPage,
   },
   {
-    path: '/panel-left/',
-    component: PanelLeftPage,
+    tabId: 'Vendor',
+    path: '/vendor/:vendor',
+    component: VendorPage,
   },
   {
-    path: '/panel-right/',
-    component: PanelRightPage,
+    tabId: 'GameDetail',
+    path: '/vendor/gamedetail/:game',
+    component: GameDetailPage,
   },
   {
-    path: '/about/',
-    component: AboutPage,
+    tabId: 'Theme',
+    path: '/setting/theme',
+    component: ThemePage,
   },
   {
-    path: '/form/',
-    component: FormPage,
+    tabId: 'Color',
+    path: '/setting/color',
+    component: ColorPage,
   },
   {
-    path: '/dynamic-route/blog/:blogId/post/:postId/',
-    component: DynamicRoutePage,
+    tabId: 'GoldenF',
+    path: '/about/goldenf',
+    component: GoldenfPage,
+  },
+  {
+    tabId: 'Partner',
+    path: '/about/partner',
+    component: PartnerPage,
+  },
+  {
+    tabId: 'Web',
+    path: '/about/web',
+    component: WebPage,
+  },
+  {
+    tabId: 'Privacy',
+    path: '/about/privacy',
+    component: PrivacyPage,
   },
   {
     path: '(.*)',
