@@ -1,6 +1,5 @@
 {
-    "themestyle": [
-        {
+    "themestyle": [{
             "theme": "light",
             "css": "theme-light",
             "name": "白天模式"
@@ -11,8 +10,7 @@
             "name": "黑夜模式"
         }
     ],
-    "colorstyle": [
-        {
+    "colorstyle": [{
             "color": "blue",
             "css": "color-theme-blue",
             "name": "藍色"
@@ -53,16 +51,70 @@
             "name": "黑色"
         }
     ],
-    "gamevendor": [
-        {
-            "name": "PG"
+    "gamevendor": [{
+            "name": "PG",
+            "gametype": [{
+                    "type": "all",
+                    "typecn": "全部",
+                    "link": "#all"
+                },
+                {
+                    "type": "tiger",
+                    "typecn": "老虎机",
+                    "link": "#tiger"
+                },
+                {
+                    "type": "card",
+                    "typecn": "棋牌",
+                    "link": "#card"
+                }
+            ]
         },
         {
-            "name": "PT"
+            "name": "PT",
+            "gametype": [{
+                    "type": "all",
+                    "typecn": "全部",
+                    "link": "#all"
+                },
+                {
+                    "type": "tiger",
+                    "typecn": "老虎机",
+                    "link": "#tiger"
+                },
+                {
+                    "type": "card",
+                    "typecn": "棋牌",
+                    "link": "#card"
+                }
+            ]
+        },
+        {
+            "name": "CQ9",
+            "gametype": [{
+                    "type": "all",
+                    "typecn": "全部",
+                    "link": "#all"
+                },
+                {
+                    "type": "tiger",
+                    "typecn": "老虎机",
+                    "link": "#tiger"
+                },
+                {
+                    "type": "fish",
+                    "typecn": "捕魚",
+                    "link": "#fish"
+                },
+                {
+                    "type": "arcade",
+                    "typecn": "街机",
+                    "link": "#arcade"
+                }
+            ]
         }
     ],
-    "partners": [
-        {
+    "partners": [{
             "name": "PG",
             "logo": "./static/img/partner/partner-pg.png"
         },
@@ -195,8 +247,7 @@
             "logo": "./static/img/partner/partner-ky.png"
         }
     ],
-    "pggame": [
-        {
+    "pggame": [{
             "vendor": "PG SOFT",
             "name": "麻辣火锅",
             "enname": "Hotpot",
@@ -207,8 +258,7 @@
             "video": "https://www.pgsoft.com/uploads/Games/Video/85b371ed-fb7d-4256-90c5-85ce84d29dc2.mp4",
             "story": "老四川火锅起源于小米滩，其精髓在于麻、辣、鲜、香。火锅汤料、食材的选用以及烹调的方法使汤头具有冲击性的的“麻”与“辣”以及食材原料中的鲜”与“香“巧妙又平衡地融合在一起，创造出荤与素、生与熟、麻辣与鲜甜、嫩脆与绵烂、清香与浓醇的美妙结合。 火锅所带来的丰富味觉体验以及从餐桌上所流淌的“同心、同聚、同享、同乐” 的氛围体现了中国饮食之道中所追求的味道的调和，以及川渝人”安逸、巴适“的精神。和亲朋好友们围着热气腾腾的火锅，边吃边聊天的温馨融洽的气氛是火锅更为迷人的地方。 《麻辣火锅》是一款融合了老四川火锅元素的“九宫格”视频老虎机游戏。只要火锅里出现三个或以上一样的食材，玩家就能赢得奖金。此外，游戏里还设有三种等级的川辣奖池，只要集齐辣椒符号就能赢取额外的奖励哦！精致的视觉效果让玩家在玩游戏之余，还能体验到火锅餐桌上那火辣辣的欢快气氛！",
             "play": "https://integration.pgsoft.me/hotpot/index.html?language=en&bet_type=2&from=https://goldenf.co/demoapp",
-            "platform": [
-                {
+            "platform": [{
                     "icon": "./static/img/icon/ios.svg",
                     "device": "ios"
                 },
@@ -238,11 +288,10 @@
             "icon": "./static/img/pg-game/dragonlegend.png",
             "cover": "./static/img/pg-game/dragonlegend-cover.png",
             "link": "DragonLegend",
-            "video": "",
+            "video": "https://www.pgsoft.com/uploads/Games/Video/7aa2509f-213a-4b9c-aa06-cd4079c7e289.mp4",
             "story": "鱼跃龙门化成龙，飞黄腾达必夺魁！龙门山城的庙宇建在万丈崖上，清心荷塘的鲤鱼经过香火的熏陶下，颇有灵性，身上的金鳞银片逐渐转化为金箔与铝箔！每当斜晖映照，整个池塘金光闪耀！ 庙里曾有一个传说，当灵性鲤鱼一旦修行圆满，遇上满塘的月荷开花则将一跃而上，过门而化龙。此时，若有缘之人亲证此景象，则必获得祝福，升官发大财！ 龙门铃铛响起，月荷开花，您会是下一个被祝福的有缘人？当锦鲤配对成双，您可获得免费旋转奖励，更可赢奖翻倍！三个奖金符号将为您送来祝福，触发奖金游戏模式，随着轮盘升级，奖金也一并升级增加！",
             "play": "https://integration.pgsoft.me/dragon-legend/index.html?language=zh&bet_type=2&from=https://goldenf.co/demoapp",
-            "platform": [
-                {
+            "platform": [{
                     "icon": "./static/img/icon/ios.svg",
                     "device": "ios"
                 },
@@ -275,8 +324,7 @@
             "video": "https://www.pgsoft.com/uploads/Games/Video/9ef9644a-7c9e-468a-8741-156c10d5b407.mp4",
             "story": "从前在一个迷雾笼罩的森林里隐藏着一只狡猾的大灰狼，它总是注视着这个小村庄里所发生的一切，对人们的一举一动更是了如指掌。这天，大灰狼饥饿之际竟把年迈的老奶奶吞入腹中。诡计多端的大灰狼知道小红帽每天都会带着礼物来看望奶奶，于是伪装成她的奶奶，想要把小红帽也变成自己的食物。 纯真善良的小红帽能否识破大灰狼的诡计将它消灭，完成逆袭？您想成为小红帽或是大灰狼？选择角色并启动角色战斗模式，把敌方打败并进入胜利角色的奖金游戏模式！奖金游戏模式以三个回合的剪刀石头布比赛定胜负，能否获得免费旋转或百搭符号的奖励，则全看您的战斗实力！当第2和第4卷轴上出现获胜符号时，迷你猜拳游戏将为您带来奖励哦！小红帽智斗大灰狼！故事的结局如何，由您来选择！ 2018倾力打造日本动漫风格的手游，精美的2D动画效果，二次元与童话故事完美结合。同时还与日本著名的音乐制作公司以及声优合作，为游戏音乐、角色配音等方面注入全新元素！",
             "play": "https://integration.pgsoft.me/hood-wolf/index.html?language=zh&bet_type=2&from=https://goldenf.co/demoapp",
-            "platform": [
-                {
+            "platform": [{
                     "icon": "./static/img/icon/ios.svg",
                     "device": "ios"
                 },
@@ -309,8 +357,7 @@
             "video": "https://www.pgsoft.com/uploads/Games/Video/163cce0e-6d6d-43e7-af67-55fd0a0afa6a.mp4",
             "story": "国王亚瑟能力出众、学识渊博，深得人民所爱戴。他身边还养了一只法师送他的灵性鸽子。 一天清晨，国王亚瑟从哨声中惊醒。入侵者汹涌而至，试图打开城门袭击，谋夺财富。曾经安逸的国度，一夕之间战火连天。国王为了平息战火，决定召唤有能力的隐士对战，若在竞技场中获得胜利，将论功奖赏。同时，国王亚瑟想起父王的嘱咐，从地窖中取出埋藏的宝箱。尘封的宝箱里究竟隐藏着什么秘密？ 独特的竞技场模式，把收集而来的卡牌发挥最大效用！收集的卡牌搭配出色的战术，将让您获得意想不到的现金奖励！奖金投注选项以额外抽取的卡牌，壮大出战阵容并打败敌方！善用您的直觉与战略，决战竞技场，呼应国王的召唤！",
             "play": "https://integration.pgsoft.me/summon-conquer/index.html?language=zh&bet_type=2&from=https://goldenf.co/demoapp",
-            "platform": [
-                {
+            "platform": [{
                     "icon": "./static/img/icon/ios.svg",
                     "device": "ios"
                 },
@@ -343,8 +390,7 @@
             "video": "https://www.pgsoft.com/uploads/Games/Video/33f4c1bd-a5b8-402b-a300-52e055dac94d.mp4",
             "story": "宇宙万物皆有一套循环系统，星辰昼夜，阴阳两极皆按照规则而交替。时间亦被称之为“第四维空间”，它存在着细微的裂缝与空隙，时隐时现。它让人类瞬间颠覆万物原理，扭转命运与财富之轨。 穿越四维空间的时光旅人，虽然拥有机会改变命运，但必须先要解锁日月星轮的三层转盘。日月星轮盘的启动需结合宇宙天地之力，齿轮的转动控制着人类物质与财富的机遇。每次旋转，若转换仪与其指向的符号相配，时光旅人即可能触发重新旋转或奖金游戏模式。您能从奖金游戏模式的8个方格里赢得多少奖励，则全看您的手气！每一次的选择，都将有机会扭转局势！ 您会成为下一个时光之旅的幸运者？命运的旋转，解锁财富之轨。",
             "play": "https://integration.pgsoft.me/steam-punk/index.html?language=zh&bet_type=2&from=https://goldenf.co/demoapp",
-            "platform": [
-                {
+            "platform": [{
                     "icon": "./static/img/icon/ios.svg",
                     "device": "ios"
                 },
@@ -377,8 +423,7 @@
             "video": "https://www.pgsoft.com/uploads/Games/Video/fa8f11d7-ce27-4bd6-be3f-f3cd14d21eda.mp4",
             "story": "女巫艾拉觊觎宝石村的财富，带着野兽部队占领了宝石村，并囚禁了所有的村民，搜刮了村庄里的所有宝石。米雪在村民们的保护下，想要逃出去寻找宝石村的救世主，却被女巫发现并把她封印成了一只猫。 米雪为了解救村民们，在寻找救世主的途中长出了翅膀。几经波折，她终于找到了解救宝石村的英雄人物！艾瑞克天生带有控制宝石的神奇力量，他是解救宝石村的唯一希望。于是米雪化身为艾瑞克的守护天使，指引着侠义与智慧并重的英雄艾瑞克，踏上了拯救宝石村的征途。 游戏随着宝石侠的征途转换四种不同的场景，冒险的旅途中将遇上不同的奖励或是遇上不同的怪物拦路。当宝石侠用宝剑击破障碍时，将有可能获得钱袋、宝石地图或宝石箱奖励！踏上征途，成为解救宝石村的救世主！",
             "play": "https://integration.pgsoft.me/gem-saviour/index.html?language=zh&bet_type=2&from=https://goldenf.co/demoapp",
-            "platform": [
-                {
+            "platform": [{
                     "icon": "./static/img/icon/ios.svg",
                     "device": "ios"
                 },
@@ -411,8 +456,7 @@
             "video": "https://www.pgsoft.com/uploads/Games/Video/8a0ba953-5e79-4fe7-b38f-0b08afdef635.mp4",
             "story": "抓抓乐游戏设计灵感源自PG SOFT™在英国伦敦ICE展会上所举办的《娃娃机》活动，该活动受欢迎的程度超乎想象。为期三天的ICE展会，娃娃机前排队的参与者络绎不绝。一幕幕现场的画面触动着设计师的心灵，经过灵感与灵感之间的激烈碰撞、日以继夜的赶工，一气呵成地完成了这款游戏的创作。 成堆的限量版公仔堆叠在娃娃机内，任谁也想投下硬币，试试手气！想要抓到喜欢的可爱萌娃，就看您的运气！每一只公仔都有其特别之处，中世纪的神话传说中，当独角兽出现时，好运就会降临。幸运者一次就可抓出大奖，反之则需要多试几次！您不一定能得到它，这就是抓抓乐的迷人之处。 抓抓乐游戏里的公仔将分别为您带来不一样的奖励，当抓到极为稀有的独角兽公仔时，它将用百搭符号奖励您！此外，只要获得三个夺宝符号，您将进入奖金游戏模式并获得免费旋转。赶快投下硬币，收集每款不一样的可爱公仔！",
             "play": "https://integration.pgsoft.me/plushie-frenzy/index.html?language=zh&bet_type=2&from=https://goldenf.co/demoapp",
-            "platform": [
-                {
+            "platform": [{
                     "icon": "./static/img/icon/ios.svg",
                     "device": "ios"
                 },
@@ -445,8 +489,7 @@
             "video": "https://www.pgsoft.com/uploads/Games/Video/623d1960-1ad0-4f5c-83f2-6e38833e327b.mp4",
             "story": "几千年来，巫师之书所记载的神秘法术，可以召唤大自然元素，更可以召唤任何的大地生物。其中最为神秘的，非炼金术莫属，它拥有转化万物的能力，一旦练成，即能点石成金，让人拥有挥之不尽的财富。 然而，云霄塔里的老巫师终其一生以炼金术为终极目标，却败给了岁月的催促。一夜，狂风把云霄塔吹得凌乱不堪，6本魔法书更因此而散落，拼凑不齐。成就炼金之术需结合6本巫书，神智恍惚的老巫师，满脑的咒语、秘籍以及炼金符号已混淆不清。 快来帮助老巫师完成炼金之术，当每本书的两页魔法符号匹配，就会合成炼金符号，并触发神秘魔法获得更多的赢奖机会。",
             "play": "https://integration.pgsoft.me/wizdom-wonders/index.html?language=zh&bet_type=2&from=https://goldenf.co/demoapp",
-            "platform": [
-                {
+            "platform": [{
                     "icon": "./static/img/icon/ios.svg",
                     "device": "ios"
                 },
@@ -479,8 +522,7 @@
             "video": "https://www.pgsoft.com/uploads/Games/Video/6ae5e0e7-f01d-4bb8-b1af-4564053b94c4.mp4",
             "story": "二十一点游戏最早可追溯回17世纪、源自法国的Vingt-et- Un（法语二十一之意）游戏。到了1800年， 这种游戏方式传至美国。游戏也在经过时间演变后，发展成如今大家所熟知的美式二十一点。 《美式二十一点》基本规则不变，卡牌点数须接近但不超过二十一点，这是您击败对手的终极目标！玩法简单不复杂，如何做出最正确的决定，取决于您！勇敢地要牌吧，直至要到心中的数目为止！",
             "play": "https://integration.pgsoft.me/blackjack-us/index.html?language=zh&bet_type=2&from=https://goldenf.co/demoapp",
-            "platform": [
-                {
+            "platform": [{
                     "icon": "./static/img/icon/ios.svg",
                     "device": "ios"
                 },
@@ -513,8 +555,7 @@
             "video": "https://www.pgsoft.com/uploads/Games/Video/c7bbd5de-ac33-42f8-8aed-e3ca3256cfcd.mp4",
             "story": "《欧式二十一点》在结合传统二十一点的规则基础下并没有改变，但不同之处，则在于庄家并没有暗牌！在这样的情况下，当庄家的牌揭开后为 二十一点时，则所有没有二十一点的玩家算输。 相对而言，玩家更无法在开始时猜测庄家的牌面形势。当您无法摸透对手心思时，心跳加速的紧张刺激感，让您更专注，更投入于牌局中！",
             "play": "https://integration.pgsoft.me/blackjack-eu/index.html?language=zh&bet_type=2&from=https://goldenf.co/demoapp",
-            "platform": [
-                {
+            "platform": [{
                     "icon": "./static/img/icon/ios.svg",
                     "device": "ios"
                 },
@@ -547,8 +588,7 @@
             "video": "https://www.pgsoft.com/uploads/Games/Video/1721cb7d-66ee-40df-b0b0-dbde5edba02f.mp4",
             "story": "美杜莎曾经是雅典娜的神庙的女祭司。根据当时的习俗，女祭司一生要保持贞洁，但是美杜莎偏偏长了一张美丽的脸。也许美丽有时候就是上帝的惩罚，海神波塞冬的出现让美杜莎来不及思考,并堕入爱河。她跑到雅典娜的神庙祈求原谅，但还是在神庙内被爱蒙蔽了双眼并失去了贞洁。雅典娜对于美杜莎失去贞洁之身非常愤怒，于是，她对美杜莎下了诅咒，今后凡是与美杜莎眼神接触的男人，都将化为石像… 迷你卷轴封存着他们美好的爱情记忆，当迷你卷轴出现时，您将有机会获得美杜莎之吻和波塞冬赐予的力量，让平静的卷轴上出现神奇的变化。悲泣的爱情力量将化为夺宝符号带您进入免费旋转模式，若美杜莎与海神的符号填满特殊仪表，您将有机会获得5倍、10倍、30倍以及最高100倍的奖励！",
             "play": "https://integration.pgsoft.me/medusa/index.html?language=zh&bet_type=2&from=https://goldenf.co/demoapp",
-            "platform": [
-                {
+            "platform": [{
                     "icon": "./static/img/icon/ios.svg",
                     "device": "ios"
                 },
@@ -581,8 +621,7 @@
             "video": "https://www.pgsoft.com/uploads/Games/Video/45ac810e-9aa1-41f0-bb47-9b9c1eeaea28.mp4",
             "story": "十二生肖的故事流传千年，每一种生肖都有着丰富的传说！吉祥物们守护着不同的运程宫位，为人们带来无限的祝福。“旺旺”作为吉祥物之一，它爱吃贪玩的性格非常惹人喜爱，其掌管着布满金山银海的宫殿，更是人们梦寐以求的地方。 传说只要有人来到这里，“旺旺”都会打开宫殿之门，送出大量的金银财宝。您又岂能错过这难得的机会？快来赢走翻倍奖金吧！选择押宝3，您将有机会获得巨额的财富。",
             "play": "https://integration.pgsoft.me/win-win-won/index.html?language=zh&bet_type=2&from=https://goldenf.co/demoapp",
-            "platform": [
-                {
+            "platform": [{
                     "icon": "./static/img/icon/ios.svg",
                     "device": "ios"
                 },
@@ -615,8 +654,7 @@
             "video": "https://www.pgsoft.com/uploads/Games/Video/139b560c-529f-41fe-b76a-dc0f13af4a7a.mp4",
             "story": "神秘的豌豆村被一层云雾所笼罩，极少人发现这神秘的仙境。仙境里住着一位善良活泼的精灵，她的任务是为有缘人引路，并让他选择自己喜欢的豌豆荚作为礼物。每一个豌豆荚都包裹着让人意想不到的惊喜！ 黑蜘蛛与蝴蝶是精灵最要好的朋友，它们快乐地守护着每一个宝贵的豌豆荚。调皮的黑蜘蛛喜欢抓弄蝴蝶，设下蜘蛛网套住蝴蝶，若谁帮助了蝴蝶脱困，蝴蝶将会把最漂亮的豌豆花送给他。黑蜘蛛好玩的个性，喜欢提出选择题，能不能从它的手上获得意想不到的礼物，则看你的选择啦！ 本款游戏拥有243条中奖组合，同时融入多种创意与玩法，编入了“百搭蝴蝶”、“蛛网蝴蝶”、“免费旋转”以及“试手气”模式。漂亮的蝴蝶与盛开的豌豆花，都将给玩家带来无限的惊喜！",
             "play": "https://integration.pgsoft.me/peas-fairy/index.html?language=zh&bet_type=2&from=https://goldenf.co/demoapp",
-            "platform": [
-                {
+            "platform": [{
                     "icon": "./static/img/icon/ios.svg",
                     "device": "ios"
                 },
@@ -649,8 +687,7 @@
             "video": "https://www.pgsoft.com/uploads/Games/Video/3c784099-9cfd-4ab4-9dbd-265e730e942d.mp4",
             "story": "扑克牌最初只有52张，而在上个世纪60年代后期，人们开始使用“小丑”替换丢失的卡牌。长久以往，“小丑”的形象应运而生，从而充当着万能牌的角色。因此，“小丑”成为许多扑克游戏中非常抢手的王牌。 《小丑翻翻乐》在经典翻牌机的基础上，推出了全新的画面，打造了全新体验。真实的手势动画和贴心的路单查询，极大程度地丰富了游戏性，让玩家翻牌不停，乐爽不停。",
             "play": "https://integration.pgsoft.me/joker-wild/index.html?language=zh&bet_type=2&from=https://goldenf.co/demoapp",
-            "platform": [
-                {
+            "platform": [{
                     "icon": "./static/img/icon/ios.svg",
                     "device": "ios"
                 },
@@ -683,8 +720,7 @@
             "video": "https://www.pgsoft.com/uploads/Games/Video/3b74ddf0-a162-46ed-95ff-8a9cfacee94a.mp4",
             "story": "这里曾是一座花园, 现在却是一块墓地，里面杂乱的堆满了尸体, 所有的尸体表情都定格在恐惧的一瞬间、定格在死亡的那一刻、定格在他们看见美杜莎的一刹那…… 宙斯之子帕修斯，为了不让母亲被好色的国王强娶为王后，立誓取下美杜莎头颅作为交换。帕修斯历经千辛万苦，终于来到美杜莎居住的巢穴。带着众神赐予的武器：冥王哈迪斯头盔、宙斯之剑、雅典娜之盾，帕修斯开始了一段传颂至今的希腊神话之旅…… 扮演珀修斯，冒险进入妖魔巢穴以取下美杜莎头颅。美杜莎将在免费旋转模式时现身，当获得包括头盔、盾牌、火炬、钉头槌或匕首符号时，珀修斯将攻击美杜莎。打破这妖魔的诅咒！你将有机会获得百搭符号的奖励！",
             "play": "https://integration.pgsoft.me/medusa2/index.html?language=zh&bet_type=2&from=https://goldenf.co/demoapp",
-            "platform": [
-                {
+            "platform": [{
                     "icon": "./static/img/icon/ios.svg",
                     "device": "ios"
                 },
@@ -717,8 +753,7 @@
             "video": "https://www.pgsoft.com/uploads/Games/Video/dee71c13-f58f-4376-8943-72c52d9a8d1c.mp4",
             "story": "传说有位神仙给农夫一颗种子，嘱咐他每天挑七七四十九担水浇灌，水里面要滴七七四十九粒汗珠。农夫照着老人的话做了，结果树上结出许多许多金币。农夫用手一摇，树上就落下取之不尽的财富。于是摇钱树的故事在民间流传开来。在人类迁徙、畜牧、耕种的过程中，发现通过付出血汗辛勤劳动的财富才能聚之不尽，用之不完。现在大家逢年过节中都借用金桔树并挂上红包利是等，祈求风调雨顺、吉祥如意、财源滚滚来！ 当摇钱树上挂满了红包时，将获得免费旋转奖励。您将有机会在招财进宝模式中获得大奖，每摇动一次摇钱树，都有机会获得巨大回报。招财进宝模式里，隐藏在每一封金色红包背后的神秘礼物，都可能为您带来好运气！雄伟的摇钱树将以30条固定中奖线呈现给您，让您摇一摇，财源滚滚来！",
             "play": "https://integration.pgsoft.me/fortune-tree/index.html?language=zh&bet_type=2&from=https://goldenf.co/demoapp",
-            "platform": [
-                {
+            "platform": [{
                     "icon": "./static/img/icon/ios.svg",
                     "device": "ios"
                 },
@@ -751,8 +786,7 @@
             "video": "https://www.pgsoft.com/uploads/Games/Video/1ddeb864-743e-4834-b48e-308365a5e08f.mp4",
             "story": "马无夜草不肥，人无横财不富。千百年来，人类想要获得更多财富积累，除了脚踏实地地辛勤劳动以外，还希望得到财神的眷顾和青睐。 利市仙官姚少司是正财神赵公明的弟子，也称横财神。早在宋朝民间，人们就对利市仙官非常崇拜。到了元朝民间，商人们更是对横财神虔诚供奉。 在中国北方，每逢新年，家家户户必将利市仙官的像贴在门上，以求吉利。所以，只要你持之以恒，一心向善，谁又能阻止横财神与善财童子一夜之间给你带来好运与财富呢… 从左到右拓展，右到左拓展的双向任赢线。财神降临将百搭符号保持现有位置并进入重新旋转奖励。运气与财富都聚集在这让人期待的15条固定中奖线中等着您。",
             "play": "https://integration.pgsoft.me/fortune-gods/index.html?language=zh&bet_type=2&from=https://goldenf.co/demoapp",
-            "platform": [
-                {
+            "platform": [{
                     "icon": "./static/img/icon/ios.svg",
                     "device": "ios"
                 },
@@ -785,8 +819,7 @@
             "video": "https://www.pgsoft.com/uploads/Games/Video/5fdb67bf-17f1-4ec6-8fbe-2f7e50c3b6db.mp4",
             "story": "东汉末年，董卓挟幼帝独揽大权，专横残暴，导致民不聊生。其义子吕布为三国时期第一猛将，骁勇善战，无人可与之抗衡。为了解救天下苍生，王允使出美人计，让董卓与吕布同时爱上被誉为“古代四大美女”之首的貂蝉。一夜，貂蝉在凤仪亭莺歌燕舞，曼妙的身姿引来了董卓与吕布，一场围绕着“霸权”“爱情”“财富”的争夺由此展开...... 故事的结局？选择董卓获得‘奖金翻倍’；还是貂蝉的‘拓展百搭’；亦或者吕布的‘连杀连赢’。以你喜欢的角色投入夜戏貂蝉，获得更多样化的免费游戏以奖励自己！",
             "play": "https://integration.pgsoft.me/diaochan/index.html?language=zh&bet_type=2&from=https://goldenf.co/demoapp",
-            "platform": [
-                {
+            "platform": [{
                     "icon": "./static/img/icon/ios.svg",
                     "device": "ios"
                 },
@@ -809,8 +842,7 @@
             ]
         }
     ],
-    "ptgame": [
-        {
+    "ptgame": [{
             "vendor": "PTSW",
             "name": "雅馬遜美人",
             "enname": "Amazon Lady",
@@ -929,6 +961,157 @@
             "cover": "./static/img/pt-game/mavericksaloon-cover.jpg",
             "link": "MaverickSaloon",
             "play": "https://sw.gcpstg.m27613.com/mavericksaloon/140/index.html?playmode=fun&from=https://goldenf.co/demoapp"
+        }
+    ],
+    "cq9game": [{
+            "vendor": "CQ9",
+            "name": "食神",
+            "enname": "God of Cookery",
+            "type": "老虎机游戏",
+            "icon": "./static/img/cq9-game/godofcookery.png",
+            "cover": "./static/img/cq9-game/godofcookery-cover.jpg",
+            "link": "GodofCookery",
+            "play": "https://h5c.cqgame.games/28/?token=guest&language=zh-cn"
+        },
+        {
+            "vendor": "CQ9",
+            "name": "皇金漁場",
+            "enname": "Paradise Leviathan",
+            "type": "捕鱼游戏",
+            "icon": "./static/img/cq9-game/paradiseleviathan.png",
+            "cover": "./static/img/cq9-game/paradiseleviathan-cover.jpg",
+            "link": "ParadiseLeviathan",
+            "play": "https://iwin2.cqgame.games/AB3/?token=guest&language=zh-cn"
+        },
+        {
+            "vendor": "CQ9",
+            "name": "足球宝贝",
+            "enname": "Football Baby",
+            "type": "老虎机游戏",
+            "icon": "./static/img/cq9-game/footballbaby.png",
+            "cover": "./static/img/cq9-game/footballbaby-cover.jpg",
+            "link": "FootballBaby",
+            "play": "https://h5c.cqgame.games/96/?token=guest&language=zh-cn"
+        },
+        {
+            "vendor": "CQ9",
+            "name": "战西游",
+            "enname": "The Monkey King",
+            "type": "街机游戏",
+            "icon": "./static/img/cq9-game/themonkeyking.png",
+            "cover": "./static/img/cq9-game/themonkeyking-cover.jpg",
+            "link": "TheMonkeyKing",
+            "play": "https://sirius.cqgame.games/AA301/?token=guest&language=zh-cn"
+        },
+        {
+            "vendor": "CQ9",
+            "name": "美人鱼传说",
+            "enname": "Sea Nymphs",
+            "type": "老虎机游戏",
+            "icon": "./static/img/cq9-game/seanymphs.png",
+            "cover": "./static/img/cq9-game/seanymphs-cover.jpg",
+            "link": "SeaNymphs",
+            "play": "https://slot.cqgame.games/AC01/?token=guest&language=zh-cn"
+        },
+        {
+            "vendor": "CQ9",
+            "name": "狼月",
+            "enname": "Wolf Moon",
+            "type": "老虎机游戏",
+            "icon": "./static/img/cq9-game/wolfmoon.png",
+            "cover": "./static/img/cq9-game/wolfmoon-cover.jpg",
+            "link": "WolfMoon",
+            "play": "https://h5c.cqgame.games/46/?token=guest&language=zh-cn"
+        },
+        {
+            "vendor": "CQ9",
+            "name": "梦游仙境2",
+            "enname": "Wonderland2",
+            "type": "老虎机游戏",
+            "icon": "./static/img/cq9-game/wonderland2.png",
+            "cover": "./static/img/cq9-game/wonderland2-cover.jpg",
+            "link": "Wonderland2",
+            "play": "https://h5c.cqgame.games/11/?token=guest&language=zh-cn"
+        },
+        {
+            "vendor": "CQ9",
+            "name": "丛林舞会",
+            "enname": "Jungle Party",
+            "type": "街机游戏",
+            "icon": "./static/img/cq9-game/jungleparty.png",
+            "cover": "./static/img/cq9-game/jungleparty-cover.jpg",
+            "link": "JunglepParty",
+            "play": "https://h5c.cqgame.games/60/?token=guest&language=zh-cn"
+        },
+        {
+            "vendor": "CQ9",
+            "name": "足球世界杯",
+            "enname": "Golden Kick",
+            "type": "街机游戏",
+            "icon": "./static/img/cq9-game/goldenkick.png",
+            "cover": "./static/img/cq9-game/goldenkick-cover.jpg",
+            "link": "GoldenKick",
+            "play": "https://h5c.cqgame.games/65/?token=guest&language=zh-cn"
+        },
+        {
+            "vendor": "CQ9",
+            "name": "钻石水果王",
+            "enname": "Fruit King",
+            "type": "老虎机游戏",
+            "icon": "./static/img/cq9-game/fruitking.png",
+            "cover": "./static/img/cq9-game/fruitking-cover.jpg",
+            "link": "FruitKing",
+            "play": "https://h5c.cqgame.games/1/?token=guest&language=zh-cn"
+        },
+        {
+            "vendor": "CQ9",
+            "name": "天天吃豆",
+            "enname": "Mr. Been",
+            "type": "街机游戏",
+            "icon": "./static/img/cq9-game/mrbeen.png",
+            "cover": "./static/img/cq9-game/mrbeen-cover.jpg",
+            "link": "MrBeen",
+            "play": "https://h5c.cqgame.games/61/?token=guest&language=zh-cn"
+        },
+        {
+            "vendor": "CQ9",
+            "name": "通天神探狄仁杰",
+            "enname": "Detective Dee",
+            "type": "老虎机游戏",
+            "icon": "./static/img/cq9-game/detectivedee.png",
+            "cover": "./static/img/cq9-game/detectivedee-cover.jpg",
+            "link": "DetectiveDee",
+            "play": "https://h5c.cqgame.games/32/?token=guest&language=zh-cn"
+        },
+        {
+            "vendor": "CQ9",
+            "name": "寂寞星球",
+            "enname": "Lonely Planet",
+            "type": "老虎机游戏",
+            "icon": "./static/img/cq9-game/lonelyplanet.png",
+            "cover": "./static/img/cq9-game/lonelyplanet-cover.jpg",
+            "link": "LonelyPlanet",
+            "play": "https://h5c.cqgame.games/49/?token=guest&language=zh-cn"
+        },
+        {
+            "vendor": "CQ9",
+            "name": "雀王",
+            "enname": "Mahjong King",
+            "type": "老虎机游戏",
+            "icon": "./static/img/cq9-game/mahjongking.png",
+            "cover": "./static/img/cq9-game/mahjongking-cover.jpg",
+            "link": "MahjongKing",
+            "play": "https://h5c.cqgame.games/18/?token=guest&language=zh-cn"
+        },
+        {
+            "vendor": "CQ9",
+            "name": "森林泰后",
+            "enname": "Wild Tarzan",
+            "type": "老虎机游戏",
+            "icon": "./static/img/cq9-game/wildtarzan.png",
+            "cover": "./static/img/cq9-game/wildtarzan-cover.jpg",
+            "link": "WildTarzan",
+            "play": "https://h5c.cqgame.games/4/?token=guest&language=zh-cn"
         }
     ]
 }

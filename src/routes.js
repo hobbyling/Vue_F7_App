@@ -21,54 +21,53 @@ import PrivacyPage from './pages/privacy.vue';
 Vue.use(VueRouter);
 
 
-export default [
-  {
-    tabId: '首頁',
-    path: '/',
-    component: MainPage,
-  },
-  {
-    tabId: 'Vendor',
-    path: '/vendor/:vendor',
-    component: VendorPage,
-  },
-  {
-    tabId: 'GameDetail',
-    path: '/vendor/gamedetail/:game',
-    component: GameDetailPage,
-  },
-  {
-    tabId: 'Theme',
-    path: '/setting/theme',
-    component: ThemePage,
-  },
-  {
-    tabId: 'Color',
-    path: '/setting/color',
-    component: ColorPage,
-  },
-  {
-    tabId: 'GoldenF',
-    path: '/about/goldenf',
-    component: GoldenfPage,
-  },
-  {
-    tabId: 'Partner',
-    path: '/about/partner',
-    component: PartnerPage,
-  },
-  {
-    tabId: 'Web',
-    path: '/about/web',
-    component: WebPage,
-  },
-  {
-    tabId: 'Privacy',
-    path: '/about/privacy',
-    component: PrivacyPage,
-  },
-  {
-    path: '(.*)',
-    component: NotFoundPage,
-  },
+export default [{
+        tabId: '首頁',
+        path: '/',
+        component: MainPage,
+    },
+    {
+        tabId: 'Vendor',
+        path: '/vendor/:vendor',
+        component: VendorPage,
+    },
+    {
+        tabId: 'GameDetail',
+        path: '/vendor/:vendor/:game',
+        component: GameDetailPage,
+    },
+    {
+        tabId: 'Theme',
+        path: '/setting/theme',
+        component: ThemePage,
+    },
+    {
+        tabId: 'Color',
+        path: '/setting/color',
+        component: ColorPage,
+    },
+    {
+        tabId: 'GoldenF',
+        path: '/about/goldenf',
+        component: GoldenfPage,
+    },
+    {
+        tabId: 'Partner',
+        path: '/about/partner',
+        component: PartnerPage,
+    },
+    {
+        tabId: 'Web',
+        path: '/about/web',
+        component: WebPage,
+    },
+    {
+        tabId: 'Privacy',
+        path: '/about/privacy',
+        component: PrivacyPage,
+    },
+    {
+        path: '(.*)',
+        component: NotFoundPage,
+    },
 ];

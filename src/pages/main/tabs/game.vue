@@ -14,6 +14,11 @@
             <img :src="skylogo" alt="">
           </a>
         </f7-col>
+        <f7-col class="logo">
+          <a href="/vendor/cq9">
+            <img :src="cq9logo" alt="">
+          </a>
+        </f7-col>
   
     </f7-block>
     <!-- <hr> -->
@@ -44,12 +49,12 @@
             <li v-for="item in slotgamelist" :key="item.link">
               <div class="item-content">
                 <div class="item-media">
-                  <a :href="'/vendor/gamedetail/'+item.link">
+                  <a :href="'/vendor/'+item.vendor+'/'+item.link">
                     <img :src="item.icon" alt="">
                   </a>
                 </div>
                 <div class="item-inner">
-                  <a :href="'/vendor/gamedetail/'+item.link">
+                  <a :href="'/vendor/'+item.vendor+'/'+item.link">
                     <div class="item-title-row">                    
                         <div class="item-title">{{item.name}}</div>
                         <div class="item-after">                   
@@ -70,12 +75,12 @@
             <li v-for="item in cardgamelist" :key="item.link">
               <div class="item-content">
                 <div class="item-media">
-                  <a :href="'/vendor/gamedetail/'+item.link">
+                  <a :href="'/vendor/'+item.vendor+'/'+item.link">
                     <img :src="item.icon" alt="">
                   </a>
                 </div>
                 <div class="item-inner">
-                  <a :href="'/vendor/gamedetail/'+item.link">
+                  <a :href="'/vendor/'+item.vendor+'/'+item.link">
                     <div class="item-title-row">                    
                         <div class="item-title">{{item.name}}</div>
                         <div class="item-after">                   
@@ -102,7 +107,8 @@ export default {
       slotgamelist: [],
       cardgamelist: [],
       pglogo: "./static/img/vendor/partner-pg-black.png",
-      skylogo: "./static/img/vendor/partner-skywind.png"
+      skylogo: "./static/img/vendor/partner-skywind.png",
+      cq9logo: "./static/img/vendor/partner-cq9.png"
     };
   },
   created() {

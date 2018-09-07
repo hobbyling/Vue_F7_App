@@ -22,7 +22,6 @@
 
       <f7-block class="video">
         <video class="afterglow" width="100%" controls :poster="game.cover" :src="game.video"  @click="videoControl"></video>
-        <!-- <video class="afterglow" width="100%" controls :poster="game.cover" :src="game.video"  onclick="this.play();"></video> -->
       </f7-block>
     </f7-block>
 
@@ -50,20 +49,26 @@ export default {
   methods: {
     getData: function() {
       const vm = this;
+      const vendor = vm.$f7Route.params.vendor;
       const path = vm.$f7Route.params.game;
       const api = "./static/data.json";
+      let data;
+      
+      console.log(vendor+"/"+path);
+
       this.$http.get(api).then(function(response) {
-        const data = response.data.pggame;
-        const data2 = response.data.ptgame;
+
+        if(vendor == "PG SOFT"){
+          data = response.data.pggame;
+        } else if(vendor == "PTSW"){
+          data = response.data.ptgame;
+        } else if(vendor == "CQ9"){
+          data = response.data.cq9game;
+        }
+
         vm.game = data.find(function(element) {
           return element.link == path;
         });
-
-        if (!vm.game) {
-          vm.game = data2.find(function(element) {
-            return element.link == path;
-          });
-        }
       });
     },
     openGame: function(btn) {
