@@ -1,10 +1,15 @@
 <template>
+<div>
+  <f7-navbar>
+    <f7-nav-title>Setting</f7-nav-title>
+  </f7-navbar>
   <f7-page class="SettingView">
     <f7-list>     
         <f7-list-item link="/setting/theme/" title="佈景主題"></f7-list-item>
         <f7-list-item link="/setting/color/" title="色彩主題"></f7-list-item>
     </f7-list>
   </f7-page>
+  </div>
 </template>
 <script>
 export default {

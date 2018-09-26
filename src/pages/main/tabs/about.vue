@@ -1,4 +1,9 @@
 <template>
+<div>
+  <!-- <f7-navbar>
+    <f7-nav-title>About</f7-nav-title>
+  </f7-navbar> -->
+
   <f7-page name="about" class="about">
     <div class="poster">
       <img :src="bgimg" alt="" class="about-poster">
@@ -43,6 +48,7 @@
 
     </f7-block>
   </f7-page>
+  </div>
 </template>
 
 <script>

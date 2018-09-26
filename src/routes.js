@@ -3,9 +3,9 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 
 // 自訂的分頁元件
-import MainPage from './pages/main/main.vue';
+import MainPage from './pages/main/main';
 
-import NotFoundPage from './pages/not-found.vue';
+import NotFoundPage from './pages/not-found';
 
 import VendorPage from './pages/vendor.vue';
 import GameDetailPage from './pages/game-detail.vue';
@@ -22,18 +22,18 @@ Vue.use(VueRouter);
 
 
 export default [{
-        tabId: '首頁',
+        tabId: 'Index',
         path: '/',
         component: MainPage,
     },
     {
         tabId: 'Vendor',
-        path: '/vendor/:vendor',
+        path: '/game/:vendor',
         component: VendorPage,
     },
     {
         tabId: 'GameDetail',
-        path: '/vendor/:vendor/:game',
+        path: '/game/:vendor/:game',
         component: GameDetailPage,
     },
     {
@@ -70,4 +70,4 @@ export default [{
         path: '(.*)',
         component: NotFoundPage,
     },
-];
+]

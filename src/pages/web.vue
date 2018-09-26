@@ -5,7 +5,7 @@
     
     <f7-block>
         <img :src="qrcode" alt="" class="qrcode">
-        <p>goldenf.co</p>
+        <p>https://goldenf.co</p>
         <f7-button fill href="https://goldenf.co" target="_blank" external>前往官網</f7-button>
 
     </f7-block>
@@ -22,3 +22,20 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.qrcode {
+  margin: 0 auto;
+  display: block;
+  width: 250px;
+  height: 250px;
+}
+
+p {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 30px;
+}
+</style>
+

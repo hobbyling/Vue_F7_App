@@ -1,121 +1,35 @@
 <template id="gamelist">
-    <f7-page>
-        <f7-navbar :title="vendor" back-link="$f7router.back()">
+    <f7-page hide-toolbar-on-scroll>
+        <f7-navbar :title="vendor" back-link="$f7router.back()"></f7-navbar>
 
-        </f7-navbar>
-        <!-- <f7-toolbar tabbar>
-          <f7-link tab-link="#all" tab-link-active @click="visibility = 'all'">All</f7-link>
-          <f7-link tab-link="#slot" @click="visibility = 'tiger'">老虎机</f7-link>
-          <f7-link tab-link="#card" @click="visibility = 'card'">棋牌</f7-link>
-        </f7-toolbar> -->
         <f7-toolbar tabbar>
-          <f7-link v-for="(item, key) in gametype" :key="key" :tab-link="item.link" tab-link-active @click="tab(item.type)">{{item.typecn}}</f7-link>
+          <f7-link v-for="(item, key) in gametype" :key="key" :tab-link="item.link"  @click="tab(item.type ,key)" :class="{'tab-link-active': visibility == item.type}">{{item.typecn}}</f7-link>
         </f7-toolbar>
 
-        <f7-tabs>
+        <f7-tabs animated>
           <f7-tab :id="type.type" v-for="(type, key) in gametype" :key="key" class="page-content" :class="{'tab-active': visibility == type.type}">
             <f7-list media-list class="gamelist">
               <li v-for="item in filterGames" :key="item.link">
+                <a :href="'/game/'+item.vendor+'/'+item.link">
                 <div class="item-content">
-                  <div class="item-media">
-                    <a :href="'/vendor/'+item.vendor+'/'+item.link">
-                      <img :src="item.icon" alt="">
-                    </a>
+                  <div class="item-media">               
+                    <img :src="item.icon" alt="">                 
                   </div>
-                  <div class="item-inner">
-                    <a :href="'/vendor/'+item.vendor+'/'+item.link">
-                      <div class="item-title-row">                    
-                          <div class="item-title">{{item.name}}</div>
-                          <div class="item-after">                   
-                              <span>Go ></span>               
-                          </div>                    
-                      </div>
-                    </a>
+                  <div class="item-inner">                
+                    <div class="item-title-row">                    
+                        <div class="item-title">{{item.name}}</div>
+                        <div class="item-after">                   
+                            <span>Go ></span>               
+                        </div>                    
+                    </div>
                     <div class="item-subtitle">{{item.enname}}</div>
                     <div class="item-text">{{item.type}}</div>
                   </div>
                 </div>
+                </a>
               </li>
             </f7-list>
           </f7-tab>
-
-          <!-- <f7-tab id="slot" class="page-content">
-            <f7-list media-list class="gamelist">
-              <li v-for="item in slotGames" :key="item.link">
-                <div class="item-content">
-                  <div class="item-media">
-                    <a :href="'/vendor/gamedetail/'+item.link">
-                      <img :src="item.icon" alt="">
-                    </a>
-                  </div>
-                  <div class="item-inner">
-                    <a :href="'/vendor/gamedetail/'+item.link">
-                      <div class="item-title-row">                    
-                          <div class="item-title">{{item.name}}</div>
-                          <div class="item-after">                   
-                              <span>Go ></span>               
-                          </div>                    
-                      </div>
-                    </a>
-                    <div class="item-subtitle">{{item.enname}}</div>
-                    <div class="item-text">{{item.type}}</div>
-                  </div>
-                </div>
-              </li>
-            </f7-list>
-          </f7-tab>
-
-          <f7-tab id="card" class="page-content">
-            <f7-list media-list class="gamelist">
-              <li v-for="item in cardGames" :key="item.link">
-                <div class="item-content">
-                  <div class="item-media">
-                    <a :href="'/vendor/gamedetail/'+item.link">
-                      <img :src="item.icon" alt="">
-                    </a>
-                  </div>
-                  <div class="item-inner">
-                    <a :href="'/vendor/gamedetail/'+item.link">
-                      <div class="item-title-row">                    
-                          <div class="item-title">{{item.name}}</div>
-                          <div class="item-after">                   
-                              <span>Go ></span>               
-                          </div>                    
-                      </div>
-                    </a>
-                    <div class="item-subtitle">{{item.enname}}</div>
-                    <div class="item-text">{{item.type}}</div>
-                  </div>
-                </div>
-              </li>
-            </f7-list>
-          </f7-tab>
-
-          <f7-tab id="fish" class="page-content">
-            <f7-list media-list class="gamelist">
-              <li v-for="item in fishGames" :key="item.link">
-                <div class="item-content">
-                  <div class="item-media">
-                    <a :href="'/vendor/gamedetail/'+item.link">
-                      <img :src="item.icon" alt="">
-                    </a>
-                  </div>
-                  <div class="item-inner">
-                    <a :href="'/vendor/gamedetail/'+item.link">
-                      <div class="item-title-row">                    
-                          <div class="item-title">{{item.name}}</div>
-                          <div class="item-after">                   
-                              <span>Go ></span>               
-                          </div>                    
-                      </div>
-                    </a>
-                    <div class="item-subtitle">{{item.enname}}</div>
-                    <div class="item-text">{{item.type}}</div>
-                  </div>
-                </div>
-              </li>
-            </f7-list>
-          </f7-tab> -->
         </f7-tabs> 
     </f7-page>
 </template>
@@ -141,25 +55,27 @@ export default {
       const path = vm.$f7Route.params.vendor;
       console.log(path);
       this.$http.get(api).then(function(response) {
-        if (path == "pg") {
+        if (path == "PG") {
           vm.vendorgame = response.data.pggame;
           vm.gametype = response.data.gamevendor[0].gametype;
           vm.vendor = "PG Game";
            
-        } else if (path == "pt") {
+        } else if (path == "PTSW") {
           vm.vendorgame = response.data.ptgame;
           vm.gametype = response.data.gamevendor[1].gametype;
           vm.vendor = "PT Game";
-        } else if (path == "cq9") {
+        } else if (path == "CQ9") {
           vm.vendorgame = response.data.cq9game;
           vm.gametype = response.data.gamevendor[2].gametype;
           vm.vendor = "CQ9 Game";
         }
       });
     },
-    tab: function(index){
-      console.log(index);
+    tab: function(index, key){
+      
       this.visibility = index;
+      console.log(index +'/' +key);
+
     }
   },
   computed: {
@@ -229,3 +145,8 @@ export default {
   }
 };
 </script>
+<style scoped>
+.tab-link-highlight {
+  height: 10px;
+}
+</style>

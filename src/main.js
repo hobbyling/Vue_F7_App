@@ -23,35 +23,36 @@ import App from './app';
 
 
 
+
 // Init F7 Vue Plugin
 Vue.use(Framework7Vue, Framework7)
 Vue.use(VueAxios, axios)
 
 // Init App
 new Vue({
-  el: '#app',
-  data: {
-    data: [],
-  },
-  template: '<app/>',
-  // Init Framework7 by passing parameters here
-  framework7: {
-    id: 'io.framework7.testapp', // App bundle ID
-    name: 'Framework7', // App name
-    theme: 'md', // auto/md/ios
-    // App routes
-    routes: Routes,
-    hideNavbarOnPageScroll: true,
-    view: {
-      pushState: true,
-      // pushStateRoot: "/demoapp/"
-      pushStateRoot: process.env.PUSH_STATE
-    }
-  },
-  // Register App Component
-  components: {
-    app: App
-  },
+    el: '#app',
+    data: {
+        data: [],
+    },
+    template: '<app/>',
+    // Init Framework7 by passing parameters here
+    framework7: {
+        id: 'io.framework7.testapp', // App bundle ID
+        name: 'Framework7', // App name
+        theme: 'md', // auto/md/ios
+        // App routes
+        routes: Routes,
+        hideNavbarOnPageScroll: true,
+        view: {
+            pushState: true,
+            pushStateRoot: "/demoapp/",
+            pushStateRoot: process.env.PUSH_STATE
+        }
+    },
+    // Register App Component
+    components: {
+        app: App
+    },
 
 
 });

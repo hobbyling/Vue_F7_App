@@ -114,9 +114,29 @@
             ]
         }
     ],
+    "banner": [{
+            "description": "pg-game",
+            "img": "./static/img/banner/banner1.jpg",
+            "link": "/game/PG"
+        },
+        {
+            "description": "cq9-game",
+            "img": "./static/img/banner/banner2.jpg",
+            "link": "/game/CQ9"
+        },
+        {
+            "description": "pt-game",
+            "img": "./static/img/banner/banner3.jpg",
+            "link": "/game/PTSW"
+        }
+    ],
     "partners": [{
             "name": "PG",
             "logo": "./static/img/partner/partner-pg.png"
+        },
+        {
+            "name": "CQ9",
+            "logo": "./static/img/partner/partner-cq9.png"
         },
         {
             "name": "LB KENO",
@@ -248,7 +268,73 @@
         }
     ],
     "pggame": [{
-            "vendor": "PG SOFT",
+            "vendor": "PG",
+            "name": "后羿射日",
+            "enname": "Legend of Hou Yi",
+            "type": "老虎机游戏",
+            "icon": "./static/img/pg-game/legendofhouyi.png",
+            "cover": "./static/img/pg-game/legendofhouyi-cover.png",
+            "link": "LegendofHouYi",
+            "video": "",
+            "story": "传说古时候，天空曾经出现十个太阳，他们如同小鸟般栖息在大树上，十个太阳轮流当值，天地万物一片和谐。人们日出而耕，日落而息，生活美满幸福。 然而周而复始的循环，始终按奈不住太阳渴望自由的天性。它们打乱了原有的次序，不再轮流当值，而是一同出现于天空中。十个太阳像十个大火团，它们一起放出的热量烤焦了大地，所有的树木庄稼和房子都被烧成了灰烬。十日并出，人民发疯似地寻找可以躲避灾难的地方和能救命的水和食物。 此时，英雄后羿受天帝之命，运用他超群的箭法，驱赶太阳！后羿眼见人民生活在火难中，便暗下决心射掉那多余的九个太阳，帮助人们脱离苦海。于是，后羿越过了九十九座高山，迈过了九十九条大河，穿过了九十九个峡谷，登上了东海岳山，踏云海于脚下。后羿拉开了万斤弓弩，搭上千斤利箭，瞄准天上火辣的太阳，嗖地一箭射去。 从此，留下的太阳，每天从东边升起，西边落下！它照耀着大地，温暖人间，恢复万物之源，赋予生命之始！",
+            "play": "https://integration.pgsoft.me/legend-of-hou-yi/index.html?language=zh&bet_type=2&from=https://goldenf.co/demoapp",
+            "platform": [{
+                    "icon": "./static/img/icon/ios.svg",
+                    "device": "ios"
+                },
+                {
+                    "icon": "./static/img/icon/android.svg",
+                    "device": "Android"
+                },
+                {
+                    "icon": "./static/img/icon/windows.svg",
+                    "device": "Windows"
+                },
+                {
+                    "icon": "./static/img/icon/macos.svg",
+                    "device": "Mac OS"
+                },
+                {
+                    "icon": "./static/img/icon/html5.svg",
+                    "device": "HTML5"
+                }
+            ]
+        },
+        {
+            "vendor": "PG",
+            "name": "万胜狂欢夜",
+            "enname": "Mr. Hallow-Win",
+            "type": "老虎机游戏",
+            "icon": "./static/img/pg-game/mrhallowwin.png",
+            "cover": "./static/img/pg-game/mrhallowwin-cover.png",
+            "link": "MrHallowWin",
+            "video": "https://www.pgsoft.com/uploads/Games/Video/c6987658-e700-4fc5-bf5d-1729d5b8b0e1.mp4",
+            "story": "“不给糖就捣蛋！” 又到了月黑风高的万圣节夜晚，村庄里的小孩纷纷点起手中的南瓜灯，兴致勃勃地装扮成鬼怪，挨家挨户地要糖果，却唯独避开了山坡上的一户人家。幽静的山坡上盖着一栋古老的欧式洋房，屋外爬满了蜿蜒的藤蔓。一丝冷风吹来，空气中传来树叶摇晃的沙沙声。在月光的照耀下，房子散发出诡异的气氛，有使人止步的威慑。 传说中洋房里住着一位喜好游戏的“万胜先生”，若您在万圣节的夜晚光临他家，便会面临万胜先生所设出的游戏难题。若您可以在游戏中获胜，便能得到丰厚的奖励，反之，您将被困在房子里。据说房子里还有夺宝小幽灵和百搭南瓜灯，在他们的帮助下，您还有可能获得额外的奖金哦！今晚，您鼓起勇气叩响万胜先生的家门，究竟您是否可以打败他，获得传说中的神秘奖励呢？",
+            "play": "https://integration.pgsoft.me/mr-hallow-win/index.html?language=zh&bet_type=2&from=https://goldenf.co/demoapp",
+            "platform": [{
+                    "icon": "./static/img/icon/ios.svg",
+                    "device": "ios"
+                },
+                {
+                    "icon": "./static/img/icon/android.svg",
+                    "device": "Android"
+                },
+                {
+                    "icon": "./static/img/icon/windows.svg",
+                    "device": "Windows"
+                },
+                {
+                    "icon": "./static/img/icon/macos.svg",
+                    "device": "Mac OS"
+                },
+                {
+                    "icon": "./static/img/icon/html5.svg",
+                    "device": "HTML5"
+                }
+            ]
+        },
+        {
+            "vendor": "PG",
             "name": "麻辣火锅",
             "enname": "Hotpot",
             "type": "老虎机游戏",
@@ -281,7 +367,7 @@
             ]
         },
         {
-            "vendor": "PG SOFT",
+            "vendor": "PG",
             "name": "鱼跃龙门",
             "enname": "Dragon Legend",
             "type": "老虎机游戏",
@@ -314,7 +400,7 @@
             ]
         },
         {
-            "vendor": "PG SOFT",
+            "vendor": "PG",
             "name": "逆袭的小红帽",
             "enname": "Hood vs Wolf",
             "type": "老虎机游戏",
@@ -347,7 +433,7 @@
             ]
         },
         {
-            "vendor": "PG SOFT",
+            "vendor": "PG",
             "name": "国王的召唤",
             "enname": "Summon & Conquer",
             "type": "老虎机游戏",
@@ -380,7 +466,7 @@
             ]
         },
         {
-            "vendor": "PG SOFT",
+            "vendor": "PG",
             "name": "蒸汽朋克",
             "enname": "Steampunk",
             "type": "老虎机游戏",
@@ -413,7 +499,7 @@
             ]
         },
         {
-            "vendor": "PG SOFT",
+            "vendor": "PG",
             "name": "宝石侠",
             "enname": "Gem Saviour",
             "type": "老虎机游戏",
@@ -446,7 +532,7 @@
             ]
         },
         {
-            "vendor": "PG SOFT",
+            "vendor": "PG",
             "name": "抓抓乐",
             "enname": "Plushie Frenzy",
             "type": "老虎机游戏",
@@ -479,7 +565,7 @@
             ]
         },
         {
-            "vendor": "PG SOFT",
+            "vendor": "PG",
             "name": "巫师之书",
             "enname": "Wizdom Wonders",
             "type": "老虎机游戏",
@@ -512,7 +598,7 @@
             ]
         },
         {
-            "vendor": "PG SOFT",
+            "vendor": "PG",
             "name": "美式二十一点",
             "enname": "American Blackjack",
             "type": "棋牌游戏",
@@ -545,7 +631,7 @@
             ]
         },
         {
-            "vendor": "PG SOFT",
+            "vendor": "PG",
             "name": "欧式二十一点",
             "enname": "European Blackjack",
             "type": "棋牌游戏",
@@ -578,7 +664,7 @@
             ]
         },
         {
-            "vendor": "PG SOFT",
+            "vendor": "PG",
             "name": "美杜莎",
             "enname": "Medusa",
             "type": "老虎机游戏",
@@ -611,7 +697,7 @@
             ]
         },
         {
-            "vendor": "PG SOFT",
+            "vendor": "PG",
             "name": "旺旺旺",
             "enname": "Win Win Won",
             "type": "老虎机游戏",
@@ -620,7 +706,7 @@
             "link": "WinWinWon",
             "video": "https://www.pgsoft.com/uploads/Games/Video/45ac810e-9aa1-41f0-bb47-9b9c1eeaea28.mp4",
             "story": "十二生肖的故事流传千年，每一种生肖都有着丰富的传说！吉祥物们守护着不同的运程宫位，为人们带来无限的祝福。“旺旺”作为吉祥物之一，它爱吃贪玩的性格非常惹人喜爱，其掌管着布满金山银海的宫殿，更是人们梦寐以求的地方。 传说只要有人来到这里，“旺旺”都会打开宫殿之门，送出大量的金银财宝。您又岂能错过这难得的机会？快来赢走翻倍奖金吧！选择押宝3，您将有机会获得巨额的财富。",
-            "play": "https://integration.pgsoft.me/win-win-won/index.html?language=zh&bet_type=2&from=https://goldenf.co/demoapp",
+            "play": "https://integration.pgsoft.me/win-win-won/index.html?language=en&bet_type=2&from=https://goldenf.co/demoapp",
             "platform": [{
                     "icon": "./static/img/icon/ios.svg",
                     "device": "ios"
@@ -644,7 +730,7 @@
             ]
         },
         {
-            "vendor": "PG SOFT",
+            "vendor": "PG",
             "name": "豌豆精灵",
             "enname": "Peas Fairy",
             "type": "老虎机游戏",
@@ -677,7 +763,7 @@
             ]
         },
         {
-            "vendor": "PG SOFT",
+            "vendor": "PG",
             "name": "小丑翻翻乐",
             "enname": "Joker Wild",
             "type": "棋牌游戏",
@@ -710,7 +796,7 @@
             ]
         },
         {
-            "vendor": "PG SOFT",
+            "vendor": "PG",
             "name": "美杜莎2",
             "enname": "Medusa II",
             "type": "老虎机游戏",
@@ -743,7 +829,7 @@
             ]
         },
         {
-            "vendor": "PG SOFT",
+            "vendor": "PG",
             "name": "摇钱树",
             "enname": "Tree Of Fortune",
             "type": "老虎机游戏",
@@ -776,7 +862,7 @@
             ]
         },
         {
-            "vendor": "PG SOFT",
+            "vendor": "PG",
             "name": "横财来啦",
             "enname": "Fortune Gods",
             "type": "老虎机游戏",
@@ -809,7 +895,7 @@
             ]
         },
         {
-            "vendor": "PG SOFT",
+            "vendor": "PG",
             "name": "夜戏貂蝉",
             "enname": "Honey Trap of Diao Chan",
             "type": "老虎机游戏",
@@ -1001,6 +1087,7 @@
             "icon": "./static/img/cq9-game/themonkeyking.png",
             "cover": "./static/img/cq9-game/themonkeyking-cover.jpg",
             "link": "TheMonkeyKing",
+            "story": "「战西游」是一款24灯的跑灯游戏，拥有多达15种不同的押注选择，单一押注倍数小至2.2倍，大至43倍，供你挑选。不仅如此，它还允许玩家同时选择多种押注选项，让你增加中奖机会。到目前为止，相信许多玩家一定很好奇「战西游」的创新玩法在哪里？没错！「战西游」增加了多种不同的「送灯奖励」，让你有机会获得更多的奖金！要怎样才能获得这些丰厚的送灯奖励呢？现在就为你揭晓！这次CQ9在「战西游」中，加入了几个新元素－－头目滚轮、南天门与水濂洞，为经典跑灯游戏增添新风味。只要在头目滚轮出现两个相同角色，就能进入「对战模式」，让悟空与滚轮头目进行厮杀。当悟空成功打败滚轮头目时，就能顺利获得相对应的送灯奖励，让你有更大的机会赚得更多！进入对战模式有这么大的好处！难道只能利用头目滚轮这种方式吗？这怎么可能呢！玩家还能利用南天门或水濂洞，进入对战模式，悟空将化身为无敌悟空，与随机选出的头目进行比拼。「无敌悟空」是必定获胜的，将为你赢得更丰厚的财富！为了增添更多惊喜，随着头目的不同，将会有不同的送灯奖励，让你期待感无限上升，刺激感无限加倍！不仅如此，只要打败二郎神，「战西游」还会随机送出额外高额彩金，最高将会有10,000元的额外奖励让你带回家！各位，让我们一起进入「战西游」，帮助悟空打败盗宝小妖等头目，让「战西游」为我们点石成金吧！",
             "play": "https://sirius.cqgame.games/AA301/?token=guest&language=zh-cn"
         },
         {
@@ -1081,6 +1168,7 @@
             "icon": "./static/img/cq9-game/detectivedee.png",
             "cover": "./static/img/cq9-game/detectivedee-cover.jpg",
             "link": "DetectiveDee",
+            "story": "一直以来，狄仁杰都是武则天身边的得力干将，为她处理一切大小事。身为一国丞相的狄仁杰，表面上看似风光，背后却拥有许多不为人知的辛酸！？ 由于他身居高位，再加上武则天对他非常信任，所以他每天要做的事，都堆得像山一样高，每天也累得像狗一样！终于有一天，他受不了了！他决定向武则天辞去丞相之位，准备回乡养老。可是，武则天舍不得让他离开，所以拼命地想要挽留他。然而，狄仁杰却表示他心意已决。因此，武则天想出了一个两全的方法－－进行CQ9老虎机的比拼。只要狄仁杰赢了，就同意他辞去丞相之位，反之，则继续留下来当丞相，且必须保证此后不可再辞官。最后，狄仁杰同意了。他们决定用100场的「通天神探狄仁杰」，一决雌雄。在游戏的前30场中，两人不是没中奖，就是只中小奖，所以两人差距不大。但从第31场开始，情况突然发生了变化。武则天终于得到高分图标五连线，获得5000倍的分数！武则天瞬间超过狄仁杰。虽然后来狄仁杰也中了几次高分图标连线，但是分数却始终没有超越武则天，这让狄仁杰越来越丧气。就在这时！狄仁杰获得3个以上的百搭图标，顺利进入免费游戏中，他凭借着此游戏的主要特色－－特殊延展图标的额外二次计分，获得大量分数，超越武则天，遥遥领先！在后来的场次中，尽管武则天拼命的追赶狄仁杰，却始终望尘莫及。武则天原本以为大局已定，准备投降，但，就在第90场时，她也终于进入免费游戏。尽管如此，一般人都认为，那么大的差距怎么会在几场免费游戏中就追上呢？却没想到，奇迹发生了！她不断的获得免费游戏场次，累积到60场。甚至还出现高分图标满盘，获取巨额分数。局势瞬间反转，并拉出很大的差距！然而，这巨大差距哪是短短10场游戏能超越的呢？最后，武则天获得了胜利。果然姜还是老的辣啊！或许这同时也是天意吧！上天也认为狄仁杰是个难得的清官，希望他能够继续留下来造福百姓。而他也遵守诺言，直到逝世，也没再提起辞官的事。",
             "play": "https://h5c.cqgame.games/32/?token=guest&language=zh-cn"
         },
         {

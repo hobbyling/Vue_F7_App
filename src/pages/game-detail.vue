@@ -58,7 +58,7 @@ export default {
 
       this.$http.get(api).then(function(response) {
 
-        if(vendor == "PG SOFT"){
+        if(vendor == "PG"){
           data = response.data.pggame;
         } else if(vendor == "PTSW"){
           data = response.data.ptgame;

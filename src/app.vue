@@ -7,6 +7,11 @@
 
 <script>
 export default {
+  data(){
+    return{
+      setting: []
+    }
+  },
   created() {
     this.getData();
   },
@@ -16,20 +21,26 @@ export default {
 
       const localsetting = localStorage.getItem("Setting");
 
-      // 若localstorage裡有值
+      // 若localstorage裡有值，將值帶入setting；若沒有值，將blue寫進setting
       if (localsetting) {
         vm.setting = JSON.parse(localsetting);
         console.log(vm.setting);
-      }
+      } 
+      // else{
+      //   vm.setting.color = 'blue';
+      //   vm.setting.colorcss = 'color-theme-blue';
+      //   vm.setting.theme = 'Light';
+      //   vm.setting.themecss = ''; 
+      // }
 
       document.querySelector("body").className = "";
 
-      // 若主題有值
+      // 若主題有值，將class寫入html
       if (vm.setting.themecss) {
         document.querySelector("body").classList.add(vm.setting.themecss);
       }
 
-      // 若顏色有值
+      // 若顏色有值，將class寫入html
       if (vm.setting.colorcss) {
         document.querySelector("body").classList.add(vm.setting.colorcss);
       }
@@ -39,6 +50,5 @@ export default {
 </script>
 
 <style lang="sass">
-@import "./css/style";
-@import "./css/color";
+@import "./css/all";
 </style>
